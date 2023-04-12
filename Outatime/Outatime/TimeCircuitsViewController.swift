@@ -14,6 +14,18 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
+    var dateFormatter: DateFormatter {
+        
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "MMM d, yyyy"
+        
+        formatter.timeZone = TimeZone.current
+        
+        return formatter
+        
+    }
+    
     // MARK: - Lifecycle functions
     override func viewDidLoad() {
         super.viewDidLoad()
