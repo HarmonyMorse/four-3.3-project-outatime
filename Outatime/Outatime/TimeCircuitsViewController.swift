@@ -14,6 +14,8 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
+    var currentSpeed: Int = 0
+    
     var dateFormatter: DateFormatter {
         
         let formatter = DateFormatter()
@@ -29,7 +31,11 @@ class TimeCircuitsViewController: UIViewController {
     // MARK: - Lifecycle functions
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        presentTimeLabel.text = dateFormatter.string(from: Date())
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
+        
         // Do any additional setup after loading the view.
     }
     
