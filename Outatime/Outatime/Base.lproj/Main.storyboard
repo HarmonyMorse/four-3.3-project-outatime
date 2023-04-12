@@ -153,8 +153,29 @@
                     <view key="view" contentMode="scaleToFill" id="GrK-Zg-Ans">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="e8d-Le-Ws3">
+                                <rect key="frame" x="-12.666666666666657" y="389" width="400.33333333333326" height="34.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="bE0-Dd-Tef"/>
+                                </constraints>
+                            </datePicker>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAA-pQ-bsh">
+                                <rect key="frame" x="0.0" y="734" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="cancel" id="bv2-Pu-tdn"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="F18-rw-bJa"/>
+                                    <barButtonItem systemItem="save" id="rKZ-X4-ro3"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="t2f-4c-STP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e8d-Le-Ws3" firstAttribute="centerY" secondItem="GrK-Zg-Ans" secondAttribute="centerY" id="64b-EM-jAP"/>
+                            <constraint firstItem="e8d-Le-Ws3" firstAttribute="centerX" secondItem="GrK-Zg-Ans" secondAttribute="centerX" id="zj6-KS-GL4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GsP-dt-li0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
