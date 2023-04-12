@@ -39,6 +39,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="TRAVEL BACK"/>
+                                        <connections>
+                                            <action selector="travelBackTapped:" destination="YMr-Ce-o0E" eventType="touchUpInside" id="VNN-Il-YLx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -132,6 +135,12 @@
                             <constraint firstItem="jcL-0f-mHh" firstAttribute="leading" secondItem="k6M-R9-oGB" secondAttribute="leading" constant="20" id="wqz-Vf-5Cn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="destinationTimeLabel" destination="Hb5-MQ-zHg" id="A6Y-Cs-V69"/>
+                        <outlet property="lastTimeDepartedLabel" destination="ode-2R-4cj" id="YSo-iA-k6J"/>
+                        <outlet property="presentTimeLabel" destination="Aw7-m3-RYu" id="YzE-lf-LE2"/>
+                        <outlet property="speedLabel" destination="vGh-Ud-vYj" id="Aso-7D-pj2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZQ-A6-kIG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
